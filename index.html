@@ -5,184 +5,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wiley LAU</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Hero Section -->
+    <nav class="nav">
+        <div class="container">
+            <a href="#work">Work</a>
+            <a href="#cv">CV</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
     <section id="home" class="hero">
-        <div class="hero-content">
+        <div class="container">
             <h1 class="hero-title">Hi, I'm LAU Tsz-lam.<br>You can call me Wiley.</h1>
-            <p class="hero-subtitle" id="dynamic-tagline">Creating meaningful digital experiences</p>
-            <div class="hero-cta">
-                <a href="#about" class="cta-button">Discover More</a>
-            </div>
+            <p class="hero-tagline">Student. Developer. Hong Kong.</p>
+            <a href="#work" class="hero-link">→ View work</a>
         </div>
-        <div class="scroll-indicator" onclick="scrollToAbout()">
-            <div class="scroll-arrow"></div>
-        </div>
+        <div class="scroll-hint">↓</div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="section">
+        <div class="container narrow">
+            <p>Student at HKUST. Building practical systems with technology and AI.</p>
+        </div>
+    </section>
+
+    <section id="work" class="section">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">About Me</h2>
-            </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <p class="about-description">
-                        I'm a student passionate about using technology and AI to make everyday life better.
-                        I focus on creating smart, user-friendly solutions with care and creativity.</p>
-                    <p class="about-description">
-                        I blend creativity with tech skills to create projects 
-                        that look great, are easy to use and provide real value to users and businesses.</p>
-                </div>
-                <div class="about-image">
-                </div>
+            <h2 class="section-title">Work</h2>
+            <div class="work-list">
+                <article class="work-row">
+                    <span class="work-num">01</span>
+                    <div class="work-info">
+                        <h3>No.3 Dress Inventory System</h3>
+                        <p>A straightforward uniform and accessory lending system for a Uniformed Group in Hong Kong.</p>
+                    </div>
+                    <div class="work-thumb">
+                        <img src="./assets/project-1.png" alt="No.3 Dress Inventory System">
+                    </div>
+                </article>
+                <article class="work-row">
+                    <span class="work-num">02</span>
+                    <div class="work-info">
+                        <h3>Metronome</h3>
+                        <p>A basic Metronome with Skeuomorphism in mind.</p>
+                    </div>
+                    <div class="work-thumb">
+                        <img src="./assets/project-2.png" alt="Metronome">
+                    </div>
+                </article>
+                <article class="work-row">
+                    <span class="work-num">03</span>
+                    <div class="work-info">
+                        <h3>DeStress</h3>
+                        <p>A WebApp that helps users relax with sounds and music. Featured on 56th JSSE.</p>
+                    </div>
+                    <div class="work-thumb">
+                        <img src="./assets/project-3.jpg" alt="DeStress">
+                    </div>
+                </article>
             </div>
         </div>
     </section>
 
-    <!-- Work Section -->
-    <section id="work" class="section work-section">
+    <section id="cv" class="section">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">My Work</h2>
-                <p class="section-subtitle">A selection of projects that showcase my expertise</p>
-            </div>
-            <div class="work-grid">
-                <div class="work-item">
-                    <div class="work-image">
-                        <img src="./assets/project-1.png" alt="No.3 Project" class="project-thumbnail">
-                    </div>
-                    <div class="work-content">
-                        <h3 class="work-title">No.3 Dress Inventory System</h3>
-                        <p class="work-description">A straightforward uniform and accessory lending system for a Uniformed Group in Hong Kong.</p>
-                    </div>
-                </div>
-                <div class="work-item">
-                    <div class="work-image">
-                        <img src="./assets/project-2.png" alt="St. Marks Sound Project" class="project-thumbnail">
-                    </div>
-                    <div class="work-content">
-                        <h3 class="work-title">Metronome</h3>
-                        <p class="work-description">A basic Metronome with Skeuomorphism in mind.</p>
-                    </div>
-                </div>
-                <div class="work-item">
-                    <div class="work-image">
-                        <img src="./assets/project-3.jpg    " alt="Destress Project" class="project-thumbnail">
-                    </div>
-                    <div class="work-content">
-                        <h3 class="work-title">DeStress</h3>
-                        <p class="work-description">A WebApp that helps users relax with sounds and music. Featured on 56th JSSE.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CV Section -->
-    <section id="cv" class="section cv-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Curriculum Vitae</h2>
-                <p class="section-subtitle">Download my complete professional profile.</p>
-            </div>
+            <h2 class="section-title">CV</h2>
             <div class="cv-content">
-                <div class="cv-preview">
-                    <div class="cv-document">
-                        <div class="cv-header">
-                            <h3>LAU Tsz-lam (Wiley)</h3>
-                        </div>
-                        <div class="cv-sections">
-                            <div class="cv-section-item">
-                                <div class="cv-section-title">Experience</div>
-                                <div class="cv-section-content">
-                                    <div class="cv-item">Project Assistant • Hong Kong Adventure Corps (2024-Present)</div>
-                                    <div class="cv-item">IT Technician • St. Mark's School (2024-Present)</div>
-                                </div>
-                            </div>
-                            <div class="cv-section-item">
-                                <div class="cv-section-title">Education</div>
-                                <div class="cv-section-content">
-                                    <div class="cv-item">BEng Industrial Engineering and Engineering Management • HKUST (2024-Present)</div>
-                                </div>
-                            </div>
-                            <div class="cv-section-item">
-                                <div class="cv-section-title">Skills</div>
-                                <div class="cv-section-content">
-                                    <div class="cv-item">UI/UX Design • Figma • PHP • MySQL</div>
-                                    <div class="cv-item">AI Automation • Prototyping • Javascript</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <h3 class="cv-name">LAU Tsz-lam (Wiley)</h3>
+                <div class="cv-block">
+                    <h4>Experience</h4>
+                    <p>Project Assistant • Hong Kong Adventure Corps (2024–Present)</p>
+                    <p>IT Technician • St. Mark's School (2024–Present)</p>
                 </div>
-                <div class="cv-download">
-                    <a href="#" class="download-button" onclick="downloadCV()">
-                        <span class="download-icon">↓</span>
-                        Download CV
-                    </a>
-                    <p class="cv-note">PDF format • Updated regularly</p>
+                <div class="cv-block">
+                    <h4>Education</h4>
+                    <p>BEng Industrial Engineering and Engineering Management • HKUST (2024–Present)</p>
                 </div>
+                <div class="cv-block">
+                    <h4>Skills</h4>
+                    <p>UI/UX Design • Figma • PHP • MySQL • AI Automation • Prototyping • Javascript</p>
+                </div>
+                <a href="#" class="download-link" onclick="downloadCV(); return false;">→ Download PDF</a>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section contact-section">
+    <section id="contact" class="section">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="section-subtitle">Let's build the future together.</p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <h3>Email</h3>
-                        <a href="mailto:wileylau@gmail.com">wileylau@gmail.com</a>
-                    </div>
-                    <div class="contact-item">
-                        <h3>Instagram</h3>
-                        <a href="https://www.instagram.com/wileylau/" target="_blank">@wileylau</a>
-                    </div>
-                    <div class="contact-item">
-                        <h3>Telegram</h3>
-                        <a href="https://t.me/wileylau/" target="_blank">@wileylau</a>
-                    </div>
-                    <div class="contact-item">
-                        <h3>GitHub</h3>
-                        <a href="https://www.github.com/wileylau/" target="_blank">wileylau</a>
-                    </div>
-                    <div class="contact-item">
-                        <h3>Location</h3>
-                        <span>Hong Kong • Available for remote work</span>
-                    </div>
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-list">
+                <div class="contact-row">
+                    <span class="contact-label">Email</span>
+                    <a href="mailto:wileylau@gmail.com">wileylau@gmail.com</a>
                 </div>
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="submit-button">Send Message</button>
-                    </form>
+                <div class="contact-row">
+                    <span class="contact-label">Instagram</span>
+                    <a href="https://www.instagram.com/wileylau/" target="_blank">@wileylau</a>
+                </div>
+                <div class="contact-row">
+                    <span class="contact-label">Telegram</span>
+                    <a href="https://t.me/wileylau/" target="_blank">@wileylau</a>
+                </div>
+                <div class="contact-row">
+                    <span class="contact-label">GitHub</span>
+                    <a href="https://www.github.com/wileylau/" target="_blank">wileylau</a>
+                </div>
+                <div class="contact-row">
+                    <span class="contact-label">Location</span>
+                    <span>Hong Kong</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Wiley LAU. All rights reserved.</p>
+            <p>© 2025 Wiley LAU</p>
         </div>
     </footer>
 
